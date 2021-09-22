@@ -1,0 +1,84 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   "background": "#f3fafa",
+   "title": "Freedom Index 2020 Rankings",
+       "view": {"fill": "#f3fafa"},
+    "data": {"url": "https://raw.githubusercontent.com/belinda-chan/Assignment2/main/Freedom%20Index.csv"},
+    "width":400,
+    "height":500,
+    "encoding": {
+      "x": {"field": "Year", "type": "nominal", "title": "Year"},
+  "y": {"field": "Rank", "type": "ordinal", "scale": {"domain": ["1", "2", "3", "4","5","6","7","8","9","10","11","12","13","14","15"]}},
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field":"Country",
+          "type":"nominal",
+          "scale": {"range": ["#e890ef", "#ffa099", "#ffdb66","#a297fe", "#ffeb66","#ff8de1","#759aff","#c793f9","#ffad88","#ffbc78", "#ff8fbf", "#FFF176","#ff8dd1","#ffcb6d","#ff96ac"]},
+          "legend": null
+        },
+        "value": "grey"
+      },
+      "opacity": {
+        "condition": {
+          "param": "hover",
+          "value": 1
+        },
+        "value": 0.2
+      },
+       "tooltip": [
+   {"field": "Country", "type": "nominal", "title": "Country name"},
+   {"field": "Year"},
+    {"field":"Rank", "type":"nominal"}
+   ]
+    },
+    "layer": [{
+        "mark": {"type": "point", "filled": true, "size":700}
+      },{"mark":{"type":"text"}, "encoding": {"text": {"field":"Rank"}}
+  
+    },
+      
+      {
+      "params": [{
+        "name": "hover",
+        "value": [{"Country": "Denmark"}],
+        "select": {
+          "type": "point",
+          "fields": ["Country"],
+          "on": "mouseover"
+        }
+      }],
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    }, {
+      "mark": "line"
+    }, {
+      "encoding": {
+        "x": {"field": "Year"},
+        "y": {"field": "Rank"}
+  
+      },
+      "layer": [ {"mark": {"type": "text", "align": "left", "dx": 20,"dy": 1},
+  
+        "transform": [
+          {"filter": "datum.Year == 2020"}
+        ],
+        "encoding": {
+          "text": {"field":"Country", "type": "nominal"}, "color":{"value": "grey"}}
+      }]
+    }, {
+      "encoding": {
+        "x": {"field": "Year", "axis": {"labelAngle": 0, "labelAlign": "center", "ticks": false,"labelPadding":15}},
+        "y": {"field": "Rank"}
+  
+      },
+      "layer": [ 
+      {
+        "mark": {"type": "text", "align": "center", "dx": 0,"dy": 1},
+        "encoding": {
+          "text": {"field":"Rank", "type": "nominal"}, "color": {"value": "black"}}
+      }]
+    }
+    
+    ],
+    "config": {"view": {"stroke": null}}
+  }

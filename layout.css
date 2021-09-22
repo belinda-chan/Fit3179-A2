@@ -1,0 +1,223 @@
+html,
+body {
+    background-color: #F3FAF9;
+    margin-top: -45px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+/* Subheading 1 - Happiness Index*/
+
+.container-subheading1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+  .subheading1 {
+    position: absolute;
+    top: 515px;
+    left: 245px;
+  }
+
+  .container-caption-header {
+    position: absolute;
+    top: 558px;
+    left: 245px;
+}
+
+  /* Subheading 2 - The happiest countries*/
+.subheading2 {
+    position: absolute;
+    top: 1065px;
+    left: 245px;
+  }
+  
+  .aligncenter {
+    text-align: center;
+}
+
+
+  .container-caption1 {
+    position: absolute;
+    top: 1105px;
+    left: 245px;
+
+  }
+
+
+  /* Subheading 3- The Freedom Index */
+.subheading3 {
+    position: absolute;
+    top: 1615px;
+    left: 245px;
+  }
+
+  .container-caption2 {
+    position: absolute;
+    top: 1660px;
+    left: 245px;
+
+  }
+
+    /* Subheading 4 - Corruption*/
+.subheading4 {
+    position: absolute;
+    top: 2300px;
+    left: 245px;
+  }
+
+  .container-caption3 {
+    position: absolute;
+    top: 2345px;
+    left: 245px;
+
+  }
+
+    /* Subheading 5 - GDP Growth*/
+.subheading5 {
+    position: absolute;
+    top: 2850px;
+    left: 245px;
+  }
+
+  .container-caption4 {
+    position: absolute;
+    top: 2895px;
+    left: 245px;
+
+  }
+
+    /* Subheading 6 - Life expectancy */
+.subheading6 {
+    position: absolute;
+    top: 3465px;
+    left: 245px;
+  }
+
+  .container-caption5 {
+    position: absolute;
+    top: 3515px;
+    left: 245px;
+
+  }
+
+    /* Subheading 7 - Social support*/
+.subheading7 {
+    position: absolute;
+    top: 4085px;
+    left: 245px;
+  }
+
+  .container-caption6 {
+    position: absolute;
+    top: 4130px;
+    left: 245px;
+
+  }
+
+
+    /* Subheading 8 - Generosity*/
+.subheading8 {
+    position: absolute;
+    top: 4705px;
+    left: 245px;
+  }
+
+  .container-caption7 {
+    position: absolute;
+    top: 4750px;
+    left: 245px;
+
+  }
+
+  .container-heading{
+    padding-bottom: 100px;
+      
+  }
+
+  .container1 {
+    padding-bottom: 40px;
+  }
+
+  .container2 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  .container3 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  .container4 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  .container5 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  .container6 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  .container7 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+  .container8 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+
+
+
+
+
+#pure-u-1-2{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+
+.pure-u-1-2 img {
+    width: 10vw;
+    height: 10vw;
+}
+
+
+#text_div {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#text_div2 {
+    margin-left: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: #527298;
+    font-size: 40px;
+}
+
+h2 {
+    display: inline;
+    /*background-image: linear-gradient(#BCE8E1 50%, #BCE8E1 35%);*/
+  }
+
+h3 {
+    display: inline;
+    color: #527298;
+    font-size: 20px;
+}
+
+p {
+    color: #527298;
+    font-size: 16px;
+}
+
