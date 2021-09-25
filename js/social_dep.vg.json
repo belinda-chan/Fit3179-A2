@@ -1,0 +1,55 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/belinda-chan/Assignment2/main/Social%20Support%20(2).json"},
+    "title": {"text":"Deprivation of social support - OECD countries", "font": "Lato","color": "gray", "anchor": "start"},
+    "width": 400,
+    
+    "padding": 5,
+    "autosize": "fit",
+    "background": "#f3fafa",
+    "view": {"fill": "#f3fafa"},
+    "height": {"step": 12},
+    "encoding": {
+      "x": {
+        "field": "Score",
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "y": {
+        "field": "Country",
+        "type": "ordinal",
+        "sort": "-x"
+      },
+          "color": {"condition": {"test": "datum.Score == 1.671 || datum.Score == 3.828 | datum.Score == 4.402 | datum.Score == 5.254| datum.Score == 6.44", "value": "#F5487D"},
+            "value": "#38C6B8"},         
+            "tooltip": [
+   {"field": "Country", "type": "nominal", "title": "Country name"},
+   {"field": "Score", "type": "quantitative", "format": ".2f"}
+   ]
+          
+    },
+          "layer": [
+          {"mark": {"type": "circle", "size": 55}},
+  
+          {
+            "mark": {"type": "text", "fontSize": 12.5, "align": "left", "dx": 10, "font": "Lato"},
+            "transform": [
+          {"filter": "datum.Score == 1.671 |datum.Score ==3.828 | datum.Score == 4.402 | datum.Score == 5.254| datum.Score == 6.44"}
+        ],
+  
+            "encoding": {"text": {"field": "Country", "type": "nominal"}}
+          }
+        ],
+        "config": {
+            "view": {"stroke": null}, 
+            "axisX":{ "labelFont": "Lato",
+                "titleFont": "Lato"
+    
+            },
+            "axisY":{ "labelFont": "Lato",
+                "titleFont": "Lato"
+    
+            }
+        }
+    
+  }
