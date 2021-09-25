@@ -1,9 +1,10 @@
 {
    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-   "title": {"text": "World Happiness Report - 2020", "anchor":"start"},
+   "title": {"text": "World Happiness Report - 2020", "anchor":"start","font": "Lato","color": "gray"},
+   "config": {"legend": {"titleFont": "Lato"}},
    "width": 860,
    "height": 400,
-   "projection": {"type": "equirectangular"},
+   "projection": {"type": "naturalEarth1"},
    "data": {
    "url": "https://raw.githubusercontent.com/belinda-chan/Assignment2/main/Geodata.json",
    "format": {"type": "topojson", "feature": "Geodata"}
@@ -26,6 +27,7 @@
    "encoding": {
    "color": {
       "field": "Ladder score",
+
    "type": "quantitative", 
    "sort": "descending",
    "condition": {"test": "datum['Ladder score'] < 0.1", "value": "#C4C4C4"},

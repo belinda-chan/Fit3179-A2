@@ -4,8 +4,12 @@
        "view": {"fill": "#f3fafa"},
     "width": 400,
     "height": 400,
-    "config": {"legend": {"orient": "top", "layout": {"top": {"anchor": "middle"}}, "title": null}},
-    "title": "Top 100 Life Expectancy 2020",
+    "config": {"legend": {"orient": "top", "layout": {"top": {"anchor": "middle"}}, 
+    "title": null, "labelFont": "Lato"}, "axisX":{ "labelFont": "Lato", "titleFont": "Lato"},
+  "axisY":{ "labelFont": "Lato",
+      "titleFont": "Lato"
+  }},
+    "title": {"text":"Top 100 Life Expectancy 2020", "font": "Lato", "color": "gray", "anchor": "start"},
     "data": {
     "url": "https://raw.githubusercontent.com/belinda-chan/Assignment2/main/Top%20100%20Life%20Expectancy.csv"
     },
@@ -13,7 +17,7 @@
       "x": {
     "field": "Male",
     "type": "quantitative",
-    "title": "Male life expectancy",
+    "title": "Male",
     "axis": {"tickCount": 7},
     "scale": {"domain": [70, 84]}
     },
@@ -69,6 +73,7 @@
       }, {
         "mark":{
           "type": "text",
+          "font":"Lato",
     "fontSize": 10,
     "fontStyle": "italic"},
     "encoding": {

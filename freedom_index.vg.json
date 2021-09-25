@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
    "background": "#f3fafa",
-   "title": "Freedom Index 2020 Rankings",
+   "title": {"text":"World Press Freedom Index Rankings", "font": "Lato", "color": "gray", "anchor": "start"},
        "view": {"fill": "#f3fafa"},
     "data": {"url": "https://raw.githubusercontent.com/belinda-chan/Assignment2/main/Freedom%20Index.csv"},
     "width":400,
@@ -34,7 +34,7 @@
     },
     "layer": [{
         "mark": {"type": "point", "filled": true, "size":700}
-      },{"mark":{"type":"text"}, "encoding": {"text": {"field":"Rank"}}
+      },{"mark":{"type":"text", "font": "Lato" }, "encoding": {"text": {"field":"Rank"}}
   
     },
       
@@ -57,7 +57,7 @@
         "y": {"field": "Rank"}
   
       },
-      "layer": [ {"mark": {"type": "text", "align": "left", "dx": 20,"dy": 1},
+      "layer": [ {"mark": {"type": "text", "font": "Lato" ,"align": "left", "dx": 20,"dy": 1},
   
         "transform": [
           {"filter": "datum.Year == 2020"}
@@ -73,12 +73,23 @@
       },
       "layer": [ 
       {
-        "mark": {"type": "text", "align": "center", "dx": 0,"dy": 1},
+        "mark": {"type": "text", "font": "Lato" ,"align": "center", "dx": 0,"dy": 1},
         "encoding": {
           "text": {"field":"Rank", "type": "nominal"}, "color": {"value": "black"}}
       }]
     }
     
     ],
-    "config": {"view": {"stroke": null}}
+    "config": {
+        "view": {"stroke": null}, 
+        "axisX":{ "labelFont": "Lato",
+            "titleFont": "Lato"
+
+        },
+        "axisY":{ "labelFont": "Lato",
+            "titleFont": "Lato"
+
+        }
+    }
+
   }

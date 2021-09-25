@@ -1,16 +1,18 @@
 {
     "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "title": {"text": "CAF World Giving Index Scores - Top 25 Countries", "color": "gray", "anchor": "start", "font":"Lato",
+    "dx":5},
     "autosize":"fit",
     "width": 400,
     "height": 410,
-    "padding": {"right": 20},
+    "padding": {"right": 25},
     "background": "#f3fafa",
     "view": {"fill": "#f3fafa"},
   
     "signals": [
       {
         "name": "k", "value": 25,
-        "bind": {"input": "range", "min": 10, "max": 38, "step": 1}
+        "bind": {"input": "range", "min": 10, "max": 25, "step": 1}
       },
       {
         "name": "op", "value": "max"
@@ -28,12 +30,7 @@
       ]
     }
     ],
-  
-    "title": {
-      "text": {"signal": "'Generosity'"},
-      "anchor": "start",
-      "frame": "group"
-    },
+
   
     "data": [
       {
@@ -172,6 +169,17 @@
         "scale": "y",
         "orient": "left"
       }
-    ]
+    ], 
+    "config": {
+        "view": {"stroke": null}, 
+        "axisX":{ "labelFont": "Lato",
+            "titleFont": "Lato"
+
+        },
+        "axisY":{ "labelFont": "Lato",
+            "titleFont": "Lato"
+
+        }
+    }
   }
   

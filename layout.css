@@ -1,10 +1,13 @@
 html,
 body {
+    font-family: 'Lato', sans-serif;
     background-color: #F3FAF9;
     margin-top: -45px;
+    margin-bottom: 45px;
     margin-left: 120px;
     margin-right: 120px;
 }
+
 
 /* Subheading 1 - Happiness Index*/
 
@@ -28,7 +31,7 @@ body {
   /* Subheading 2 - The happiest countries*/
 .subheading2 {
     position: absolute;
-    top: 1065px;
+    top: 1060px;
     left: 245px;
   }
   
@@ -48,13 +51,13 @@ body {
   /* Subheading 3- The Freedom Index */
 .subheading3 {
     position: absolute;
-    top: 1615px;
+    top: 1620px;
     left: 245px;
   }
 
   .container-caption2 {
     position: absolute;
-    top: 1660px;
+    top: 1665px;
     left: 245px;
 
   }
@@ -62,13 +65,13 @@ body {
     /* Subheading 4 - Corruption*/
 .subheading4 {
     position: absolute;
-    top: 2300px;
+    top: 2310px;
     left: 245px;
   }
 
   .container-caption3 {
     position: absolute;
-    top: 2345px;
+    top: 2355px;
     left: 245px;
 
   }
@@ -76,13 +79,13 @@ body {
     /* Subheading 5 - GDP Growth*/
 .subheading5 {
     position: absolute;
-    top: 2850px;
+    top: 2870px;
     left: 245px;
   }
 
   .container-caption4 {
     position: absolute;
-    top: 2895px;
+    top: 2915px;
     left: 245px;
 
   }
@@ -90,13 +93,13 @@ body {
     /* Subheading 6 - Life expectancy */
 .subheading6 {
     position: absolute;
-    top: 3465px;
+    top: 3490px;
     left: 245px;
   }
 
   .container-caption5 {
     position: absolute;
-    top: 3515px;
+    top: 3540px;
     left: 245px;
 
   }
@@ -104,13 +107,13 @@ body {
     /* Subheading 7 - Social support*/
 .subheading7 {
     position: absolute;
-    top: 4085px;
+    top: 4120px;
     left: 245px;
   }
 
   .container-caption6 {
     position: absolute;
-    top: 4130px;
+    top: 4165px;
     left: 245px;
 
   }
@@ -119,13 +122,13 @@ body {
     /* Subheading 8 - Generosity*/
 .subheading8 {
     position: absolute;
-    top: 4705px;
+    top: 4750px;
     left: 245px;
   }
 
   .container-caption7 {
     position: absolute;
-    top: 4750px;
+    top: 4800px;
     left: 245px;
 
   }
@@ -135,43 +138,48 @@ body {
       
   }
 
+  .conclusion-heading{
+    bottom: 10px;
+      
+  }
+
   .container1 {
     padding-bottom: 40px;
   }
 
   .container2 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
   }
 
   .container3 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
   .container4 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
   .container5 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
   .container6 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
   .container7 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
   .container8 {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 
 
@@ -208,16 +216,28 @@ h1 {
 h2 {
     display: inline;
     /*background-image: linear-gradient(#BCE8E1 50%, #BCE8E1 35%);*/
+    font-family: 'Lato', sans-serif;
+    color: #33475F;
+    font-weight: 900;
   }
 
 h3 {
     display: inline;
     color: #527298;
     font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     color: #527298;
     font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
 }
-
+  
+  li {
+    color: #527298;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+  }

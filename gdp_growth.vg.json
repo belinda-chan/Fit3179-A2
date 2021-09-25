@@ -2,8 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
      "background": "#f3fafa",
        "view": {"fill": "#f3fafa"},
-  "title": "GDP Growth in 2020",
-  "config": {"view": {"stroke": null}},
+  "title": {"text":"GDP Growth in 2020", "font": "Lato", "color": "gray", "anchor": "start"},
    "width": 400,
    "height": 410,
    "padding":{"left":-1},
@@ -51,12 +50,23 @@
      "layer": [
           {"mark": {"type": "bar"}},
           {
-            "mark": {"type": "text", "fontSize": 12.5, "align": "left", "dx": -15, "dy": 17},
+            "mark": {"type": "text", "font": "Lato","fontSize": 12.5, "align": "left", "dx": -15, "dy": 17},
             "transform": [
           {"filter": "datum.GDPGrowth == -2.77 |datum.GDPGrowth == -2.73 | datum.GDPGrowth == -2.82 | datum.GDPGrowth == -0.76| datum.GDPGrowth == -6.65 |datum.GDPGrowth==-3.59"}
         ],
   
             "encoding": {"text": {"field": "GDPGrowth", "type": "nominal"}}
           }
-        ]
+        ],
+        "config": {
+            "view": {"stroke": null}, 
+            "axisX":{ "labelFont": "Lato",
+                "titleFont": "Lato"
+    
+            },
+            "axisY":{ "labelFont": "Lato",
+                "titleFont": "Lato"
+    
+            }
+        }
   }

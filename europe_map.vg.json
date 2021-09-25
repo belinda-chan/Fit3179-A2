@@ -1,6 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 450,
+    "title": {"text":"The Happiest Countries", "font": "Lato","color": "gray", "anchor": "start"},
+    "width": 425,
     "height": 420,
     "background": "#f3fafa",
     "view": {"fill": "#f3fafa"},
@@ -62,6 +63,7 @@
         "layer": [{
           "mark": {
             "type": "text",
+            "font": "Lato",  
             "dy": 10
           },
           "encoding": {
@@ -86,9 +88,10 @@
         "layer": [{
           "mark": {
             "type": "text",
+            "font": "Lato",  
             "fontSize": 25,
             "color": "#48eff5",
-            "dy": -10
+            "dy": -7
           },
           "encoding": {
             "text": {"field": "Rank"},
