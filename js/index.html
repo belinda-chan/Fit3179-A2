@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="layout.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+   
+    <script src="vega_lite_vis.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Hind&family=Lato:wght@400;700;900&family=Manrope:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+
+<!-- Heading -->
+
+<body>
+<body>
+    <div class="container-heading"></div>
+    <img src="Images/Heading.jpg" width="975" height="155"/></body>
+
+        <!-- <h1>The Happiest Countries in the world</h1> -->
+
+<!-- SECTION 1: World map -->
+
+
+
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <div class="aligncenter">
+                <img src="Images/Measuring happiness 2.jpg"  style="width:400px;height:295px;"/>
+
+            </div>
+                
+    
+    </div>
+    
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+    
+            <p>The <span style="font-weight: 900;">World Happiness Report</span> is a landmark survey that ranks the happiness levels of 156 countries based on how happy 
+                their citizens perceive themselves to be. 
+            <br><br> In the 2020 edition, the World Happiness Report looks at six key variables to evaluate the levels of happiness 
+            around the world, which are: <b>GDP per capita</b>, <b>social support</b>, <b>healthy life expectancy</b>, <b>freedom to make life choices</b>, 
+            <b>generosity</b>, and <b>freedom from corruption</b> (World Happiness Report). 
+            <br><br> This visualisation aims to explore these variables, some of them from different perspectives, to see how they compare for the happiest nations.
+        
+        </p>
+             <p class="aligncenter">
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container-subheading1">
+
+                <img src="Images/bluebanner.jpg" width="950" height="42"/>
+                <div class="subheading1"><h2>Happiness around the world</h2></div>
+
+        </div>
+
+        <div>
+            <div class="container-caption-header">
+                <div class="caption"><h3>Some countries are <span style="color:#F7709B">happier</span> than others</h3></div>
+            </div>
+        
+        
+            </div>
+
+<div class="pure-g">
+    <div class="pure-u-1-1">
+        <div id="text_div">
+
+                 <div class="container1"><div id="world_map"></div></div>
+
+
+        </div>
+    </div>
+
+    
+</div>
+
+<!-- SECTION 2: Zoom in map of Europe -->
+
+
+<div class="pure-g">
+    <div class="pure-u-1-1">
+            <img src="Images/bluebanner.jpg" width="950" height="42"/>
+            <div class="subheading2"><h2>The Happiest Countries</h2></div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container-caption1">
+            <div class="caption"><h3>The happiest countries all have <span style="color:#F7709B">one</span> thing in common</h3></div>
+        </div>
+    
+    
+        </div>
+
+
+<div class="container2">
+<div class="pure-g">
+    <div class="pure-u-1-2">
+
+        <div id="europe_map"></div>
+        <!--"title": "Top 7 highest happiness index countries"-->
+
+</div>
+
+
+<div class="pure-u-1-2">
+    <div id="text_div">
+
+        <p>The countries with the highest happiest scores are all located in <b>Europe</b>, more specifically, the <b>Scandinavian </b>region. 
+        <br><br>  <b>Finland</b> is ranked first place as the <b>happiest nation in the world</b>.     <br><br>
+        Other Scandinavian countries rank highly as well, with <b>Denmark</b> in second place, <b>Iceland</b> and <b>Norway</b> in fourth and fifth place, 
+        and <b>Sweden</b> as the seventh most happiest country.
+         </p>
+         <p class="aligncenter">
+         <img src="Images/Happy Finland.jpg"/>
+        </p>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- SECTION 3: Freedom index -->
+
+<div class="pure-g">
+    <div class="pure-u-1-1">
+        <div class="container">
+            <img src="Images/bluebanner.jpg" width="950" height="42"/>
+            <div class="subheading3"><h2>Freedom of Speech</h2></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-caption2">
+    <div class="caption"><h3>Scandinavian countries have <span style="color:#F7709B">high</span> freedom of speech </h3></div>
+</div>
+
+<div class="container3">
+<div class="pure-g">
+    <div class="pure-u-1-2">
+
+
+        <h2></h2> <!--Can put subheding text -->
+        <div id="bump_chart">
+    
+        </div>
+    
+    </div>
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+
+            <p>The <span style="font-weight: 900;">World Press Freedom Index</span> ranks countries based on an assessment of 
+            press freedom records every year. It looks at the amount of freedom that each 
+            country has for journalists, news organisations, and netizens, in addition to the 
+            efforts of the country’s authorities to respect this freedom (Wikipedia). 
+            <br><br> From 2019 to 2020, both <b>Norway</b> and <b>Finland</b> mainatined their rankings of first place
+            and second place, while <b>Denmark</b> moved up from fifth to third place. <b>Sweden</b> dropped one position from third 
+            to fourth place. 
+             </p>
+        </div>
+    
+        </div>
+    
+    </div>
+</div>
+
+<!-- SECTION 4: Corruption -->
+
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <div class="container">
+                <img src="Images/bluebanner.jpg" width="950" height="42"/>
+                <div class="subheading4"><h2>Freedom From Corruption</h2></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container-caption3">
+            <div class="caption"><h3>Most Scandinavians<span style="color:#F7709B"> can</span> trust in their government</h3></div>
+        </div>
+    
+    
+        </div>
+
+<div class="container4">
+<div class="pure-g">
+    <div class="pure-u-1-2">
+
+        <h2></h2>  <!--Can put subheding text -->
+        <div id="horizontal_bar">
+    
+        </div>
+    
+    </div>
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+
+            <p>In a <span style="font-weight: 900;">2020 OECD survey </span>measuring current wellbeing, respondents from 38 OECD member countries were asked <b>whether or not</b> they have confidence in their government (OECD). 
+                
+                <br><br>While 23 of the countries surveyed had <b>less than half</b> of their population having trust in their government, this was <span style="color:#F7709B"><b>not</b></span> the case for Scandinavian 
+                countries. 
+            <br><br> In fact, <b>almost 60%</b> of people in <b>Iceland</b> trust their government, and <b>just over 80%</b> in <b>Norway</b> trust their government!
+
+             </p>
+        </div>
+    
+        </div>
+    
+    </div>
+</div>
+
+
+<!--SECION 5: GDP-->
+<div class="pure-g">
+    <div class="pure-u-1-1">
+        <div class="container">
+            <img src="Images/bluebanner.jpg" width="950" height="42"/>
+            <div class="subheading5"><h2>GDP Per Capita</h2></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-caption4">
+    <div class="caption"><h3>Most Scandinavian nations had a GDP growth <span style="color:#F7709B">above</span> world average</h3></div>
+</div>
+
+
+<div class="container5">
+<div class="pure-g">
+    <div class="pure-u-1-2">
+
+        <h2></h2>  <!--Can put subheding text -->
+        <div id="gdp_plot">
+    
+        </div>
+    
+    </div>
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+
+            <p>In the economic climate of 2020, the <b>global GDP fell by 3.59%</b> compared to the previous year's figure.
+            <br><br> However, in a year where most countries and experienced a decrease in GDP growth, the macroeconomies of 
+            <b>Norway</b>, <b>Denmark</b>, <b>Finland</b> and <b>Sweden </b>still performed relatively well in comparison, where their 
+            decline in GDP growth was <b>smaller</b> than that of Europe and the global economy as a whole. 
+            <br><br> While <b>Iceland</b> is the only exception its Scandinavian counterparts, this result is unsurprising
+            as pandemic affected one of the most important sectors to the country, which is their tourism industry (Nordicstatistics.org). 
+        
+             </p>
+        </div>
+    
+        </div>
+    
+    </div>
+</div>
+
+<!--SECION 6: Life expectancy-->
+
+<div class="pure-g">
+    <div class="pure-u-1-1">
+        <div class="container">
+            <img src="Images/bluebanner.jpg" width="950" height="42"/>
+            <div class="subheading6"><h2>Healthy Life Expectancy</h2></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-caption5">
+    <div class="caption"><h3>Scandinavians have a <span style="color:#F7709B">long</span> life expectancy</h3></div>
+</div>
+
+<div class="container6">
+<div class="pure-g">
+    <div class="pure-u-1-2">
+
+        <h2></h2> <!--Can put subheding text -->
+        <div id="scatter_plot">
+    
+        </div>
+    
+    </div>
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+
+            <p>In 2020, the average global life expectancy at birth was <b>75.6 for females</b> and <b>70.8 for males</b> (Worldometers). 
+            <br><br> People from <b>Scandinavian</b> countries have a higher longevity than this world average: <b>Iceland</b> ranks
+            in 10th place in the list of top 100 countries by life expectancy - women live to 84.9 years on average, while men 
+            live up to 82.2 years on average. 
+            <br><br> <b>Sweden</b> and <b>Norway</b> finish up in the top 20 of the list, at 13th and 17th place.
+
+             </p>
+        </div>
+    
+        </div>
+    
+    </div>
+</div>
+
+
+<!--SECION 7: Social Support-->
+
+<div class="pure-g">
+    <div class="pure-u-1-1">
+        <div class="container">
+            <img src="Images/bluebanner.jpg" width="950" height="42"/>
+            <div class="subheading7"><h2>Social Support</h2></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-caption6">
+    <div class="caption"><h3>Most Scandinavians know somebody that they<span style="color:#F7709B"> can</span> count on</h3></div>
+</div>
+
+<div class="container7">
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+    
+            <div id="dot_plot"></div>
+    
+    </div>
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+    
+            <p>The OECD measures social support using a survey asking the question: <b><i>“If you were in trouble, do you have 
+                relatives or friends you can count on to help you whenever you need them, or not?” (OECD)</i></b>
+            <br><br> Out of the 32 OCED countries, people from <b>Iceland</b> experience the <b>lowest levels of social deprivation</b>,
+            in which only 1.67% of people are likely to not have people around them that they can count on socially.
+            <br><br> <b>Sweden</b> has the highest percentage of people being socially deprived out of the <b>Scandinavian</b> countries, at 6.44%. 
+            However, this is still fairly good compared other countries in the sample - take Mexico or Greece for instance!
+             </p>
+        </div>
+    
+    
+    </div>
+</div>
+</div>
+
+
+<!--SECION 8: Generosity-->
+
+<div class="pure-g">
+    <div class="pure-u-1-1">
+        <div class="container">
+            <img src="Images/bluebanner.jpg" width="950" height="42"/>
+            <div class="subheading8"><h2>Generosity</h2></div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="container-caption7">
+        <div class="caption"><h3>However, there is one aspect Scandinavian countries can <span style="color:#F7709B">improve</span> on</h3></div>
+    </div>
+
+
+    </div>
+
+<div class="container7">
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+    
+            <h2></h2><!--Can put subheding text -->
+            <div id="generosity_bar">
+        
+            </div>
+        
+        </div>
+        
+        <div class="pure-u-1-2">
+            <div id="text_div">
+    
+                <p>The <span style="font-weight: 900;">CAF World Giving Index</span> scores and ranks countries based on three aspects of giving behaviour to determine 
+                    generosity. These questions asks if in the last month, partipants have (World Giving Index, 2021):
+
+                    <ol type = "1">
+                    <li><b>Helped a stranger</b> who needed help?</li>
+                    <li><b>Donated money</b> to a charity?</li>
+                    <li><b>Volunteered</b> at a charity organisation?</li>
+
+                </ol>
+
+                <p> The result of the 2020 findings were surprising, in which the CAF reported that countries which
+                have <b>never been in the top 10 before</b> are now <b>ranked amongst the most generous nations</b> in the world.</p>
+                
+                 </p>
+            </div>
+        
+            </div>
+        
+        </div>
+    </div>
+
+
+
+<body>
+    <div class="conclusion-heading"></div>
+    <img src="Images/Final words.jpg" width="440" height="105"/>
+
+    <div class="pure-g">
+        <div class="pure-u-1-2">
+            <div class="aligncenter">
+                <img src="Images/In summary.jpg"  style="width:325px;height:295px;"/>
+
+            </div>
+                
+    
+    </div>
+    
+    
+    <div class="pure-u-1-2">
+        <div id="text_div">
+    
+            <p><span style="font-weight: 900;">In general, we saw that in 2020, Scandinavian countries had: </span>
+            <ul>
+                <li>high rankings in terms of <b>freedom of speech</b></li>
+                <li>greater percentage of people who can <b>trust their government</b></li>
+                <li><b>smaller decrease in GDP growth</b> than world average</li>
+                <li><b>long life expectancy</b> for males and females, and</li>
+                <li><b>high levels of social support</b>.</li>
+            </ul>
+            <p>However, in what is known to be a very unpredictable year, many unexpected countries were the ones who topped the lists of the most generous! </p>
+        
+        </p>
+             <p class="aligncenter">
+            </p>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</body>
+
+</html>
